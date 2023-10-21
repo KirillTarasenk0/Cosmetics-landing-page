@@ -1,0 +1,206 @@
+.main__second-section {
+    display: flex;
+    justify-content: center;
+    .main__second-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 1296px;
+        padding-top: 169px;
+        padding-bottom: 179px;
+        .main__second-description {
+            display: flex;
+            .main__second-innovations {
+                background-color: $secondary-bg-color;
+                padding-top: 35px;
+                h2 {
+                    padding: 9px 15px 10px 15px;
+                    background-color: $main-bg-color;
+                    max-width: 125px;
+                    font-weight: 500;
+                    font-size: $text-fz;
+                    color: $text-main-color;
+                    margin-left: 40px;
+                }
+                p {
+                    font-weight: 500;
+                    color: $text-main-color;
+                    font-size: 30px;
+                    line-height: 45px;
+                    max-width: 485px;
+                    margin-left: 40px;
+                    margin-top: 30px;
+                }
+                .main__innovations-button {
+                    padding-left: 110px;
+                    padding-top: 33px;
+                    padding-bottom: 53px;
+                    a {
+                        font-weight: 700;
+                        font-size: $header-main-fz;
+                        line-height: 24px;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        text-decoration: none;
+                        color: $text-main-color;
+                        position: relative;
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            background-image: url(../img/innovations-button-right.svg);
+                            background-repeat: no-repeat;
+                            top: -10px;
+                            left: -70px;
+                            width: 50px;
+                            height: 40px;
+                        }
+                    }
+                }
+                .main__innovations-image {
+                    .img {
+                        position: relative;
+                        top: 3px;
+                    }
+                }
+            }
+            .main__second-aestetics {
+                padding-top: 35px;
+                padding-left: 134px;
+                position: relative;
+                &::after {
+                    content: url(../img/diploma.svg);
+                    position: absolute;
+                    top: 80px;
+                    left: 440px;
+                    z-index: -1;
+                }
+                h2 {
+                    background-color: $main-bg-color;
+                    color: $text-main-color;
+                    max-width: 186px;
+                    padding: 9px 15px 10px 15px;
+                    font-weight: 500;
+                    font-size: $text-fz;
+                    line-height: 21px;
+                    white-space: nowrap;
+                }
+                .main__aestetics-card {
+                    padding-left: 70px;
+                    &:nth-child(4) {
+                        padding-left: 141px;
+                    }
+                    &:not(:first-child) {
+                        padding-top: 45px;
+                    }
+                    p {
+                        font-weight: 500;
+                        font-size: $header-secondary-fz;
+                        line-height: 21px;
+                        max-width: 154px;
+                        opacity: 0.5;
+                        position: relative;
+                        &::before {
+                            content: '78';
+                            position: absolute;
+                            top: 12px;
+                            left: -70px;
+                            font-weight: 500;
+                            font-size: 48px;
+                        }
+                    }
+                    .unique__text {
+                        opacity: 1;
+                        font-weight: 500;
+                        font-size: 28px;
+                        line-height: 42px;
+                        max-width: 319px;
+                        &::before {
+                            content: '20';
+                            position: absolute;
+                            top: -32px;
+                            left: -141px;
+                            font-weight: 500;
+                            font-size: 96px;
+                            line-height: 144px;
+                            color: $secondary-bg-color;
+                        }
+                    }
+                }
+            }
+        }
+        .main__second-news {
+            .main__news-container {
+                display: flex;
+                padding-top: 80px;
+                .main__news-item {
+                    background-color: $main-bg-color;
+                    padding: 35px 0 35px 0;
+                    color: $text-main-color;
+                    h2 {
+                        background-color: $secondary-bg-color;
+                        padding: 9px 15px 10px 15px;
+                        max-width: 101px;
+                        font-weight: 500;
+                        font-size: $text-fz;
+                        line-height: 21px;
+                        margin-left: 40px;
+                    }
+                    .main__news-card {
+                        padding: 35px 40px 35px 40px;
+                        &:nth-child(2) {
+                            margin-top: 30px;
+                            background-color: $secondary-bg-color;
+                        }
+                        p {
+                            font-weight: 500;
+                            font-size: $text-fz;
+                            line-height: 27px;
+                            width: 446px;
+                        }
+                    }
+                }
+                .main__news-description {
+                    padding: 35px 60px 35px 60px;
+                    background-color: rgba(0, 134, 138, 0.2);
+                    h3 {
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 36px;
+                    }
+                    ul {
+                        padding-top: 25px;
+                        li {
+                            font-weight: 500;
+                            font-size: $header-secondary-fz;
+                            line-height: 21px;
+                            width: 629px;
+                            position: relative;
+                            &:not(:first-child) {
+                                padding-top: 15px;
+                            }
+                            &:not(:first-child)::before {
+                                content: '';
+                                position: absolute;
+                                width: 6px;
+                                height: 6px;
+                                background-color: $secondary-bg-color;
+                                border-radius: 2px;
+                                top: 22px;
+                                left: -15px;
+                            }
+                            &:first-child::after {
+                                content: '';
+                                position: absolute;
+                                width: 6px;
+                                height: 6px;
+                                background-color: $secondary-bg-color;
+                                border-radius: 2px;
+                                top: 7px;
+                                left: -15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
