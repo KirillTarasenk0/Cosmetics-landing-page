@@ -9,15 +9,46 @@
         .header__container {
             display: flex;
             max-width: 1295px;
+            @media screen and (max-width: 1330px) {
+                max-width: 1095px;
+            }
+            @media screen and (max-width: 850px) {
+                max-width: 695px;
+            }
             .header__containers-border {
                 border-left: 1px solid #C4C4C4;
                 border-right: 1px solid #C4C4C4;
+                &:not(:first-child) {
+                    @media screen and (max-width: 1095px) {
+                        display: none;
+                    }
+                }
             }
             .header__logo-container {
                 padding: 13px 35px 0px 36px;
+                @media screen and (max-width: 1330px) {
+                    padding: 5px 35px 0px 36px;
+                }
+                @media screen and (max-width: 1095px) {
+                    border: 0;
+                    margin-right: 450px
+                }
+                @media screen and (max-width: 850px) {
+                    margin-right: 300px;
+                }
+                @media screen and (max-width: 650px) {
+                    margin-right: 150px;
+                }
+                @media screen and (max-width: 560px) {
+                    margin-right: 0;
+                }
             }
             .header__phone-container {
                 padding: 36px 29px 35px 29px;
+                @media screen and (max-width: 1330px) {
+                    padding: 36px 20px 0px 20px;
+                    white-space: nowrap;
+                }
                 a {
                     font-weight: 500;
                     font-size: $header-main-fz;
@@ -28,6 +59,10 @@
             }
             .header__list-container {
                 padding: 36px 20px 34px 20px;
+                @media screen and (max-width: 1330px) {
+                    padding: 36px 20px 0px 20px;
+                    white-space: nowrap;
+                }
                 label {
                     font-weight: 500;
                     font-size: $header-main-fz;
@@ -61,14 +96,31 @@
                 width: 270px;
                 height: 40px;
                 background-color: $secondary-bg-color;
+                @media screen and (max-width: 1330px) {
+                    margin: 25px 31px 25px 30px;
+                    max-width: 170px;
+                    height: 40px;
+                }
                 .header__version-image {
                     padding-top: 12px;
                     padding-left: 15px;
+                    @media screen and (max-width: 1330px) {
+                        padding-top: 12px;
+                        padding-left: 5px;
+                    }
                 }
                 .header__version-link {
                     padding-top: 12px;
                     padding-left: 10px;
                     padding-bottom: 11px;
+                    @media screen and (max-width: 1330px) {
+                        font-size: 5px;
+                        padding-top: 5px;
+                        padding-left: 5px;
+                        padding-right: 5px;
+                        padding-bottom: 11px;
+                        text-align: center;
+                    }
                     a {
                         font-weight: 500;
                         font-size: 14px;
@@ -82,26 +134,41 @@
             .header__vk-container {
                 .vk__logo-container {
                     padding: 38px 28px 38px 28px;
+                    @media screen and (max-width: 1330px) {
+                        padding: 38px 18px 38px 18px;
+                    }
                 }
             }
             .header__youtube-container {
                 .youtube__logo-container {
                     padding: 38px 29px 38px 29px;
+                    @media screen and (max-width: 1330px) {
+                        padding: 38px 19px 38px 19px;
+                    }
                 }
             }
             .header__facebook-container {
                 .facebook__logo-container {
                     padding: 36px 35px 36px 35px;
+                    @media screen and (max-width: 1330px) {
+                        padding: 36px 25px 36px 25px;
+                    }
                 }
             }
             .header__instagram-container {
                 .instagram__logo-container {
-                    padding: 33px 28px 33px 28px;
+                    padding: 33px 28px 33px 28px; 
+                    @media screen and (max-width: 1330px) {
+                        padding: 33px 18px 33px 18px;
+                    }
                 }
             }
             .burger__menu-open-button {
                 display: none;
                 padding-top: 20px;
+                @media screen and (max-width: 1095px) {
+                    display: block;
+                }
                 button {
                     background-color: transparent;
                     border: 0;
