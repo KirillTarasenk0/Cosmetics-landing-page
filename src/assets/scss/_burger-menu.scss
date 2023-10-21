@@ -1,0 +1,111 @@
+.close__burger-menu {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: $secondary-bg-color;
+    animation-name: burgerMenuTransition;
+    animation-duration: 1s;
+    @keyframes burgerMenuTransition {
+        0% {
+            width: 0vw;
+        }
+        100% {
+            width: 100vw;
+        }
+    }
+    .close__menu-container {
+        padding-top: 30px;
+        button {
+            border: 0;
+            background-color: transparent;
+        }
+    }
+    .burger__phone-container {
+        padding-top: 20px;
+        padding-left: 70px;
+        a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-size: 28px;
+        }
+    }
+    .burger__list-container {
+        padding-top: 20px;
+        padding-left: 70px;
+        label {
+            color: #FFFFFF;
+            font-size: 28px;
+            padding-right: 10px;
+        }
+        select {
+            width: 20px;
+            height: 20px;
+            border-radius: 20px;
+            border: 0;
+        }
+    }
+    .burger__version-container {
+        display: flex;
+        padding-top: 20px;
+        padding-left: 70px;
+        .burger__version-image {
+            padding-top: 5px;
+        }
+        .burger__version-link {
+            margin-left: 20px;
+            a {
+                color: #FFFFFF;
+                text-decoration: none;
+                font-size: 28px;
+            }
+        }
+    }
+    .burger__vk-container {
+        padding-top: 20px;
+        padding-left: 70px;
+        .burger-vk__logo-container {
+            background-color: #FFFFFF;
+            width: 100px;
+            height: 50px;
+            border-radius: 10px;
+            padding-top: 17px;
+            padding-left: 37px;
+        }
+    }
+    .burger__youtube-container {
+        padding-top: 20px;
+        padding-left: 70px;
+        .burger-youtube__logo-container {
+            background-color: #FFFFFF;
+            width: 100px;
+            height: 50px;
+            border-radius: 10px;
+            padding-top: 17px;
+            padding-left: 37px;
+        }
+    }
+    .burger__facebook-container {
+        padding-top: 20px;
+        padding-left: 70px;
+        .burger-facebook__logo-container {
+            background-color: #FFFFFF;
+            width: 100px;
+            height: 50px;
+            border-radius: 10px;
+            padding-top: 15px;
+            padding-left: 45px;
+        }
+    }
+    .burger__instagram-container {
+        padding-top: 20px;
+        padding-left: 70px;
+        .burger-instagram__logo-container {
+            background-color: #FFFFFF;
+            width: 100px;
+            height: 50px;
+            border-radius: 10px;
+            padding-top: 13px;
+            padding-left: 39px;
+        }
+    }
+}
