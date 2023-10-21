@@ -3,10 +3,352 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MEDI</title>
     <link rel="stylesheet" href="./dist/css/index.min.css">
 </head>
 <body>
-    <h1>Hello world</h1>
+    <div id="burgerMenuContainer" class="close__burger-menu">
+        <div class="close__menu-container">
+            <button id="burgerMenuCloseBtn" class="close__menu-image"><img class="close__menu-icon" src="./images/menu-close-icon.svg" alt="Иконка закрывающего меню-бургер"/></button>
+        </div>
+        <div class="burger__phone-container">
+            <a class="burger__phone" href="tel:+7 (123) 456 78 90">+7 (123) 456 78 90</a>
+        </div>
+        <div class="burger__list-container">
+            <label class="burger__list-label" for="salons">Наши салоны</label>
+            <select class="burger__list" name="" id="salons">
+                <option value="1"></option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+        <div class="burger__version-container">
+            <div class="burger__version-image">
+                <img class="burger__image" src="./images/eye.svg" alt="Иконка глаза"/>
+            </div>
+            <div class="burger__version-link">
+                <a class="burger__link" href="#">Версия для слабовидящих</a>
+            </div>
+        </div>
+        <div class="burger__vk-container">
+            <div class="burger-vk__logo-container">
+                <a href="#"><img class="burger-vk__logo" src="./images/vk-logo.svg" alt="Логотип вконтакте"/></a>
+            </div>
+        </div>
+        <div class="burger__youtube-container">
+            <div class="burger-youtube__logo-container">
+                <a href="#"><img class="burger-youtube__logo" src="./images/youtube-logo.svg" alt="Логотип ютуба"/></a>
+            </div>
+        </div>
+        <div class="burger__facebook-container">
+            <div class="burger-facebook__logo-container">
+                <a href="#"><img class="burger-facebook__logo" src="./images/facebook-logo.svg" alt="Логотип фейсбука"/></a>
+            </div>
+        </div>
+        <div class="burger__instagram-container">
+            <div class="burger-instagram__logo-container">
+                <a href="#"><img class="burger-instagram__logo" src="./images/instagram-logo.svg" alt="Логотип инстаграма"/></a>
+            </div>
+        </div>
+    </div>
+    <div id="generalContainer">
+        <header class="header">
+            <div class="header__wrapper">
+                <div class="header__container">
+                    <div class="header__logo-container header__containers-border">
+                        <a href="#"><img class="header__logo" src="./images/logo.svg" alt="Логотип"/></a>
+                    </div>
+                    <div class="header__phone-container header__containers-border">
+                        <a class="header__phone" href="tel:+7 (123) 456 78 90">+7 (123) 456 78 90</a>
+                    </div>
+                    <div class="header__list-container header__containers-border">
+                        <label class="header__list-label" for="salons">Наши салоны</label>
+                        <select class="header__list" name="" id="salons">
+                            <option value="1"></option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="header__version-container header__containers-border">
+                        <div class="header__version-image">
+                            <img class="version__image" src="./images/eye.svg" alt="Иконка глаза"/>
+                        </div>
+                        <div class="header__version-link">
+                            <a class="version__link" href="#">Версия для слабовидящих</a>
+                        </div>
+                    </div>
+                    <div class="header__vk-container header__containers-border">
+                        <div class="vk__logo-container">
+                            <a href="#"><img class="vk__logo" src="./images/vk-logo.svg" alt="Логотип вконтакте"/></a>
+                        </div>
+                    </div>
+                    <div class="header__youtube-container header__containers-border">
+                        <div class="youtube__logo-container">
+                            <a href="#"><img class="youtube__logo" src="./images/youtube-logo.svg" alt="Логотип ютуба"/></a>
+                        </div>
+                    </div>
+                    <div class="header__facebook-container header__containers-border">
+                        <div class="facebook__logo-container">
+                            <a href="#"><img class="facebook__logo" src="./images/facebook-logo.svg" alt="Логотип фейсбука"/></a>
+                        </div>
+                    </div>
+                    <div class="header__instagram-container header__containers-border">
+                        <div class="instagram__logo-container">
+                            <a href="#"><img class="instagram__logo" src="./images/instagram-logo.svg" alt="Логотип инстаграма"/></a>
+                        </div>
+                    </div>
+                    <div class="burger__menu-open-button">
+                        <button id="burgerMenuOpenBtn" class="burger__menu-button"><img class="burger__menu-image" src="./images/menu-icon.svg" alt="Икогка открывающегося меню-бургер"/></button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="main__first-section">
+                <div class="main__first-container">
+                    <div class="main__service-container">
+                        <ul class="main__service-items">
+                            <li class="main__service-item">
+                                <a class="main__service-link" href="#">Косметология</a>
+                            </li>
+                            <li class="main__service-item">
+                                <a class="main__service-link" href="#">Пластическая хирургия</a>
+                            </li>
+                            <li class="main__service-item">
+                                <a class="main__service-link" href="#">Стоматология</a>
+                            </li>
+                            <li class="main__service-item">
+                                <a class="main__service-link" href="#">Лазерная медицина</a>
+                            </li>
+                            <li class="main__service-item">
+                                <a class="main__service-link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                        <div class="main__appointment-container">
+                            <a class="main__appointment-link" href="#">Запись на приём</a>
+                        </div>
+                    </div>
+                    <div class="main__description-container">
+                        <div class="main__description-article">
+                            <h2 class="main__description-title">Косметология</h2>
+                            <p class="main__description-text">Современный мир диктует новые каноны жизни: ухоженное лицо и тело, стройная, подтянутая фигура — сегодня это неотъемлемые черты привлекательной внешности, характеризующие человека благополучного и успешного.</p>
+                            <div class="main__desctiption-button"><a class="main__description-link" href="#">подробнее</a></div>
+                        </div>
+                        <div class="main__description-gallery">
+                            <div class="main__description-images">
+                                <div class="main__description-image">
+                                    <img class="description__image" src="./images/procedure.png" alt="Фото косметологии"/>
+                                </div>
+                            </div>
+                            <div class="main__description-buttons">
+                                <div class="main__left-button"><img src="./images/button-left.svg" alt="Кнопка лево"/></div>
+                                <div class="main__right-button"><img src="./images/button-right.svg" alt="Кнопка право"/></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__additions-container">
+                        <div class="main__addition-item">
+                            <a class="main__addition-link" href="#">Комплексные процедуры</a>
+                        </div>
+                        <div class="main__addition-item">
+                            <a class="main__addition-link" href="#">Центр обучения</a>
+                        </div>
+                        <div class="main__addition-item">
+                            <a class="main__addition-link" href="#">VIP клиентам</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__second-section">
+                <div class="main__second-container">
+                    <div class="main__second-description">
+                        <div class="main__second-innovations">
+                            <h2 class="main__innovations-title">Инновации</h2>
+                            <p class="main__innovations-description">Мы практикуем новый курс процедур аппаратной косметологии</p>
+                            <div class="main__innovations-button">
+                                <a class="main__innovations-link" href="#">Подробнее</a>
+                            </div>
+                            <div class="main__innovations-image">
+                                <img class="innovations__image" src="./images/innovations__img.svg" alt=""/>
+                            </div>
+                        </div>
+                        <div class="main__second-aestetics">
+                            <h2 class="main__aestetics-title">Эстетика красоты</h2>
+                            <div class="main__aestetics-card">
+                                <p class="main__aestetics-text">Современных центра в странах СНГ</p>
+                            </div>
+                            <div class="main__aestetics-card">
+                                <p class="main__aestetics-text">Современных центра в странах СНГ</p>
+                            </div>
+                            <div class="main__aestetics-card">
+                                <p class="main__aestetics-text unique__text">Уникальных патентов в области косметологии</p>
+                            </div>
+                            <div class="main__aestetics-card">
+                                <p class="main__aestetics-text">Современных центра в странах СНГ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__second-news">
+                        <div class="main__news-container">
+                            <div class="main__news-item">
+                                <h2 class="main__news-title">Новости</h2>
+                                <div class="main__news-card">
+                                    <p class="news__card-text">Почему рекомендуется посещать профессионального косметолога. Мнение специалистов центра</p>
+                                </div>
+                                <div class="main__news-card">
+                                    <p class="news__card-text">Стандартизация деятельности клиник в соответствии с ISO 9001:2015.</p>
+                                </div>
+                                <div class="main__news-card">
+                                    <p class="news__card-text">Индивидуальный подход к каждому пациенту и подбор оптимальных косметологических методик.</p>
+                                </div>
+                            </div>
+                            <div class="main__news-description">
+                                <h3 class="news__description-title">Почему рекомендуется посещать профессионального косметолога. Мнение специалистов центра</h3>
+                                <ul class="news__description-items">
+                                    <li class="news__description-item">Процедуры аппаратной косметологии на оборудовании экспертного класса от ведущих мировых производителей могут проводиться в любом возрасте и решать широкий спектр проблем: возрастные изменения, покраснения, акне и купероз, потеря тонуса и упругости кожи, отечность, целлюлит и т. п.</li>
+                                    <li class="news__description-item">С помощью инъекционных методик мы можем разгладить морщины, провести объёмное моделирование, увлажнить кожу, ввести активные вещества в поверхностные и средние слои кожи, запустить процессы омоложения.</li>
+                                    <li class="news__description-item">Лазерное и фотоомоложение помогут запустить процесс синтеза собственного коллагена, улучшить светооптические свойства кожи, а также получить максимальный эффект подтяжки лица без уколов и длительного восстановительного периода.</li>
+                                    <li class="news__description-item">Курс процедур лазерной эпиляции поможет навсегда избавиться от проблемы нежелательных волос.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__third-section">
+                <div class="main__third-container">
+                    <div class="main__third-title">
+                        <h2 class="third__title">Актуальные спецпредложения</h2>
+                    </div>
+                    <div class="main__third-gallery">
+                        <div class="third__gallery-card">
+                            <div class="third__gallery-image">
+                                <img class="gallery__image" src="./images/working.svg" alt="Фото работающего человека"/>
+                            </div>
+                            <div class="third__gallery-label">
+                                <p class="gallery__label">Лазерное и фотоомоложение</p>
+                            </div>
+                        </div>
+                        <div class="third__gallery-card">
+                            <div class="third__gallery-image">
+                                <img class="gallery__image" src="./images/first-doctor.svg" alt="Фото врача"/>
+                            </div>
+                            <div class="third__gallery-label">
+                                <p class="gallery__label">Лазерное и фотоомоложение</p>
+                            </div>
+                        </div>
+                        <div class="third__gallery-card">
+                            <div class="third__gallery-image">
+                                <img class="gallery__image" src="./images/second-doctor.svg" alt="Фото врача"/>
+                            </div>
+                            <div class="third__gallery-label">
+                                <p class="gallery__label">Лазерное и фотоомоложение</p>
+                            </div>
+                        </div>
+                        <div class="third__gallery-card">
+                            <div class="third__gallery-image">
+                                <img class="gallery__image" src="./images/third-doctor.svg" alt="Фото врача"/>
+                            </div>
+                            <div class="third__gallery-label">
+                                <p class="gallery__label">Лазерное и фотоомоложение</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__services-container services-container">
+                    <div class="footer__services-card">
+                        <h3 class="footer__services-title">Услуги</h3>
+                        <ul class="footer__services-items">
+                            <li class="footer__services-item"><a class="services__link" href="#">Косметология</a></li>
+                            <li class="footer__services-item"><a class="services__link" href="#">Пластическая хирургия</a></li>
+                            <li class="footer__services-item"><a class="services__link" href="#">Стоматология</a></li>
+                            <li class="footer__services-item"><a class="services__link" href="#">Лазерная медицина</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__services-card">
+                        <h3 class="footer__services-title">Услуги</h3>
+                        <ul class="footer__services-items">
+                            <li class="footer__services-item"><a class="services__link" href="#">Косметология</a></li>
+                            <li class="footer__services-item"><a class="services__link" href="#">Пластическая хирургия</a></li>
+                            <li class="footer__services-item"><a class="services__link" href="#">Стоматология</a></li>
+                            <li class="footer__services-item"><a class="services__link" href="#">Лазерная медицина</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__services-container services-container">
+                    <div class="footer__services-card">
+                        <h3 class="footer__services-title">Услуги</h3>
+                        <ul class="footer__services-items">
+                            <li class="footer__services-item"><a class="services__link" href="#">Косметология</a></li>
+                            <li class="footer__services-item"><a class="services__link" href="#">Пластическая хирургия</a></li>
+                            <li class="footer__services-item"><a class="services__link" href="#">Стоматология</a></li>
+                            <li class="footer__services-item"><a class="services__link" href="#">Лазерная медицина</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__services-card">
+                        <h3 class="footer__services-title">Услуги</h3>
+                        <ul class="footer__services-items">
+                            <li class="footer__services-item"><a class="services__link" href="#">Косметология</a></li>
+                            <li class="footer__services-item"><a class="services__link" href="#">Пластическая хирургия</a></li>
+                            <li class="footer__services-item"><a class="services__link" href="#">Стоматология</a></li>
+                            <li class="footer__services-item"><a class="services__link" href="#">Лазерная медицина</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__services-container services-container">
+                    <div class="footer__services-card fivth__service-card">
+                        <h3 class="footer__services-title">Услуги</h3>
+                        <ul class="footer__services-items">
+                            <li class="footer__services-item"><a class="services__link" href="#">Косметология</a></li>
+                            <li class="footer__services-item"><a class="services__link" href="#">Пластическая хирургия</a></li>
+                            <li class="footer__services-item"><a class="services__link" href="#">Стоматология</a></li>
+                            <li class="footer__services-item"><a class="services__link" href="#">Лазерная медицина</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__services-card sixth__service-card">
+                        <h3 class="footer__services-title">Услуги</h3>
+                        <ul class="footer__services-items">
+                            <li class="footer__services-item"><a class="services__link" href="#">Косметология</a></li>
+                            <li class="footer__services-item"><a class="services__link" href="#">Пластическая хирургия</a></li>
+                            <li class="footer__services-item"><a class="services__link" href="#">Стоматология</a></li>
+                            <li class="footer__services-item"><a class="services__link" href="#">Лазерная медицина</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__services-container">
+                    <div class="footer__services-contacts">
+                        <p class="footer__contacts-label">телефон</p>
+                        <div class="footer__contacts-links contacts-link">
+                            <a class="contacts__link" href="tel:+78121234567">+7 (812) 123-45-67</a>
+                        </div>
+                    </div>
+                    <div class="footer__services-contacts">
+                        <p class="footer__contacts-label">адрес</p>
+                        <div class="footer__contacts-links">
+                            <a class="contacts__link" href="https://yandex.by/maps/2/saint-petersburg/house/nevskiy_prospekt_140/Z0kYdQFpSUQFQFtjfXVzeHRmZw==/?ll=30.632684%2C59.929853&mode=search&sll=27.523311%2C54.002003&sspn=1.378784%2C0.503225&text=%D0%9D%D0%B5%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80.%20140%2C%20%D0%BF%D0%BE%D0%BC.%2010&z=10">Невский пр. 140, пом. 10</a>
+                        </div>
+                        <div class="footer__contacts-button first__contacts-button">
+                            <a class="contacts__button" href="https://yandex.by/maps/2/saint-petersburg/house/nevskiy_prospekt_140/Z0kYdQFpSUQFQFtjfXVzeHRmZw==/?ll=30.632684%2C59.929853&mode=search&sll=27.523311%2C54.002003&sspn=1.378784%2C0.503225&text=%D0%9D%D0%B5%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80.%20140%2C%20%D0%BF%D0%BE%D0%BC.%2010&z=10">как проехать?</a>
+                        </div>
+                    </div>
+                    <div class="footer__services-contacts">
+                        <p class="footer__contacts-label">адрес</p>
+                        <div class="footer__contacts-links">
+                            <a class="contacts__link" href="https://yandex.by/maps/2/saint-petersburg/house/bolshoy_prospekt_petrogradskoy_storony_12/Z0kYdA5iQEMGQFtjfXV0dX5kYw==/?ll=30.344694%2C59.940665&z=12.36">Большой пр. 12</a>
+                        </div>
+                        <div class="footer__contacts-button">
+                            <a class="contacts__button" href="https://yandex.by/maps/2/saint-petersburg/house/bolshoy_prospekt_petrogradskoy_storony_12/Z0kYdA5iQEMGQFtjfXV0dX5kYw==/?ll=30.344694%2C59.940665&z=12.36">как проехать?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
