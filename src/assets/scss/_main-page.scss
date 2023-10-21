@@ -8,10 +8,17 @@
         display: flex;
         ul {
             display: flex;
+            @media screen and (max-width: 1095px) {
+                flex-wrap: wrap;
+                padding-left: 20px;
+            }
             li {
                 padding-top: 30px;
                 &:not(:first-child) {
                     padding-left: 65px;
+                    @media screen and (max-width: 1330px) {
+                        padding-left: 20px;
+                    }
                 }
                 a {
                     font-weight: 500;
@@ -27,26 +34,57 @@
             padding: 10px 15px 10px 15px;
             background-color: $header-bg-color;
             margin-left: 95px;
+            @media screen and (max-width: 1095px) {
+                height: 40px;
+                margin-right: 20px;
+            }
             a {
                 font-weight: 500;
                 font-size: $text-fz;
                 line-height: 21px;
                 text-decoration: none;
                 color: $text-secondary-color;
+                @media screen and (max-width: 1095px) {
+                    white-space: nowrap;
+                }
+
             }
         }
     }
     .main__description-container {
         display: flex;
+        @media screen and (max-width: 850px) {
+            flex-direction: column;
+        }
         .main__description-article {
             margin-right: 134px;
             margin-top: 140px;
+            @media screen and (max-width: 1330px) {
+                margin-top: 80px;
+                margin-right: 34px;
+            }
+            @media screen and (max-width: 1095px) {
+                margin-top: 10px;
+                margin-right: 34px;
+            }
+            @media screen and (max-width: 850px) {
+                text-align: center;
+            }
             h2 {
                 font-weight: 700;
                 font-size: 48px;
                 line-height: 72px;
                 color: $text-main-color;
                 letter-spacing: 3px;
+                @media screen and (max-width: 560px) {
+                    padding-left: 30px;
+                    max-width: 200px;
+                    text-align: center;
+                }
+                @media screen and (max-width: 380px) {
+                    padding-left: 20px;
+                    max-width: 180px;
+                }
             }
             p {
                 font-weight: 500;
@@ -55,9 +93,19 @@
                 color: $text-main-color;
                 max-width: 416px;
                 margin-top: 20px;
+                @media screen and (max-width: 560px) {
+                    min-width: 200px;
+                }
+                @media screen and (max-width: 380px) {
+                    padding-left: 20px;
+                    min-width: 180px;
+                }
             }
-            .main__desctiption-button {
+            .main__description-button {
                 padding-top: 40px;
+                @media screen and (max-width: 850px) {
+                    margin-bottom: 20px;
+                }
                 a {
                     padding: 15px 25px 14px 25px;
                     background-color: $secondary-bg-color;
@@ -74,6 +122,29 @@
             .main__description-images {
                 .main__description-image {
                     padding-top: 23px;
+                    @media screen and (max-width: 850px) {
+                        padding-bottom: 100px;
+                    }
+                    @media screen and (max-width: 560px) {
+                        padding-left: 30px;
+                    }
+                    @media screen and (max-width: 380px) {
+                        padding-right: 30px;
+                    }
+                    img {
+                        @media screen and (max-width: 1330px) {
+                            width: 564px;
+                        }
+                        @media screen and (max-width: 1095px) {
+                            width: 400px;
+                        }
+                        @media screen and (max-width: 560px) {
+                            width: 350px;
+                        }
+                        @media screen and (max-width: 380px) {
+                            width: 300px;
+                        }
+                    }
                 }
             }
             .main__description-buttons {
@@ -82,11 +153,35 @@
                     position: relative;
                     top: -120px;
                     right: 179px;
+                    @media screen and (max-width: 1330px) {
+                        top: -90px;
+                        right: 179px;
+                    }
+                    @media screen and (max-width: 850px) {
+                        top: -80px;
+                        right: -151px;
+                    }
+                    @media screen and (max-width: 380px) {
+                        top: -80px;
+                        right: -120px;
+                    }
                 }
                 .main__right-button {
                     position: relative;
                     top: -120px;
                     right: 180px;
+                    @media screen and (max-width: 1330px) {
+                        top: -90px;
+                        right: 180px;
+                    }
+                    @media screen and (max-width: 850px) {
+                        top: -80px;
+                        right: -150px;
+                    }
+                    @media screen and (max-width: 380px) {
+                        top: -80px;
+                        right: -119px;
+                    }
                 }
             }
         }
@@ -94,17 +189,45 @@
     .main__additions-container {
         display: flex;
         margin-top: -55px;
+        @media screen and (max-width: 560px) {
+            flex-direction: column;
+            padding-right: 40px;
+        }
         .main__addition-item {
             &:nth-child(1) {
                 padding: 24px 199px 24px 199px;
                 background-color: $secondary-bg-color;
+                @media screen and (max-width: 1330px) {
+                    padding: 24px 99px 24px 99px;
+                }
+                @media screen and (max-width: 1095px) {
+                    padding: 24px 49px 24px 49px;
+                }
+                @media screen and (max-width: 650px) {
+                    padding: 24px 29px 24px 29px;
+                }
             }
             &:nth-child(2) {
                 padding: 24px 83px 24px 82px;
+                @media screen and (max-width: 1330px) {
+                    padding: 24px 43px 24px 42px;
+                }
+                @media screen and (max-width: 1095px) {
+                    padding: 24px 23px 24px 22px;
+                }
             }
             &:nth-child(3) {
                 padding: 24px 97px 24px 97px;
                 background-color: $secondary-bg-color;
+                @media screen and (max-width: 1330px) {
+                    padding: 24px 95px 24px 95px;
+                }
+                @media screen and (max-width: 1095px) {
+                    padding: 24px 83px 24px 83px;
+                }
+                @media screen and (max-width: 650px) {
+                    padding: 24px 33px 24px 33px;
+                }
             }
             a {
                 font-weight: 500;
@@ -114,6 +237,5 @@
                 color: $text-main-color;
             }
         }
-
     }
 }
