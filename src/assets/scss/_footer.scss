@@ -1,0 +1,85 @@
+.footer__container {
+    display: flex;
+    justify-content: center;
+    padding-top: 111px;
+    padding-bottom: 137px;
+    .footer__services-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 1228px;
+        &:last-child {
+            padding-left: 134px;
+        }
+        .footer__services-card {
+            padding-left: 20px;
+            &:last-child {
+                padding-top: 30px;
+            }
+            h3 {
+                font-weight: 700;
+                font-size: $footer-fz;
+                line-height: 31px;
+                padding-bottom: 20px;
+            }
+            ul {
+                li {
+                    &:not(:first-child) {
+                        padding-top: 15px;
+                    }
+                    a {
+                        font-weight: 500;
+                        font-size: $header-secondary-fz;
+                        line-height: 21px;
+                        color: $text-secondary-color;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .footer__services-contacts {
+            p {
+                font-weight: 500;
+                font-size: 11px;
+                line-height: 16px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                opacity: 0.5;
+                padding-bottom: 10px;
+            }
+            .footer__contacts-links {
+                margin-bottom: 15px;
+                a {
+                    font-weight: 700;
+                    font-size: $footer-fz;
+                    line-height: 31px;
+                    color: $text-secondary-color;
+                    text-decoration: none;
+                }
+            }
+            .footer__contacts-button {
+                padding: 15px 25px 14px 25px;
+                max-width: 164px;
+                background-color: $secondary-bg-color;
+                margin-top: 30px;
+                a {
+                    font-weight: 500;
+                    font-size: $header-secondary-fz;
+                    line-height: 16px;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    white-space: nowrap;
+                    color: $text-main-color;
+                    text-decoration: none;
+                }
+            }
+            .first__contacts-button {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .services-container {
+        &:not(:first-child) {
+            padding-left: 191px;
+        }
+    }
+}
