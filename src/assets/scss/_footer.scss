@@ -3,15 +3,62 @@
     justify-content: center;
     padding-top: 111px;
     padding-bottom: 137px;
+    @media screen and (max-width: 850px) {
+        flex-wrap: wrap;
+    }
     .footer__services-container {
         display: flex;
         flex-direction: column;
         max-width: 1228px;
+        @media screen and (max-width: 1330px) {
+            max-width: 1095px;
+        }
+        @media screen and (max-width: 1095px) {
+            max-width: 795px;
+        }
+        @media screen and (max-width: 850px) {
+            max-width: 595px;
+        }
+        @media screen and (max-width: 650px) {
+            max-width: 495px;
+            flex-wrap: wrap;
+            justify-content: center; 
+        }
+        @media screen and (max-width: 560px) {
+            max-width: 395px;
+            flex-wrap: wrap;
+            justify-content: center; 
+        }
         &:last-child {
             padding-left: 134px;
+            @media screen and (max-width: 1095px) {
+                padding-left: 34px;
+            }
+            @media screen and (max-width: 850px) {
+                padding-left: 34px;
+                padding-top: 40px;
+                flex-direction: row;
+            }
+        }
+        &:not(:first-child) {
+            @media screen and (max-width: 1095px) {
+                padding-left: 31px;
+            }
+        }
+        &:nth-child(3) {
+            @media screen and (max-width: 650px) {
+                display: flex;
+                flex-direction: row;
+            }
         }
         .footer__services-card {
             padding-left: 20px;
+            @media screen and (max-width: 1095px) {
+                padding-left: 10px;
+            }
+            @media screen and (max-width: 850px) {
+                padding-left: 10px;
+            }
             &:last-child {
                 padding-top: 30px;
             }
@@ -37,6 +84,23 @@
             }
         }
         .footer__services-contacts {
+            &:first-child {
+                @media screen and (max-width: 850px) {
+                    padding-right: 60px;
+                }
+            }
+            &:nth-child(2) {
+                @media screen and (max-width: 850px) {
+                    padding-right: 45px;
+                }
+            }
+            &:last-child {
+                @media screen and (max-width: 850px) {
+                    max-width: 395px;
+                    flex-wrap: wrap;
+                    justify-content: center; 
+                }
+            }
             p {
                 font-weight: 500;
                 font-size: 11px;
@@ -48,6 +112,9 @@
             }
             .footer__contacts-links {
                 margin-bottom: 15px;
+                @media screen and (max-width: 850px) {
+                    max-width: 180px;
+                }
                 a {
                     font-weight: 700;
                     font-size: $footer-fz;
@@ -80,6 +147,9 @@
     .services-container {
         &:not(:first-child) {
             padding-left: 191px;
+            @media screen and (max-width: 850px) {
+                padding-left: 31px;
+            }
         }
     }
 }
